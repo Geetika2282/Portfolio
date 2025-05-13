@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Geetika</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #DDD0C8;
+    }
+  
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #DDD0C8;
+      color: #323232;
+      padding: 12px;
+      text-align: center;
+      z-index: 10;
+    }
+  
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .navbar ul li {
+      margin: 0 12px;
+    }
+  
+    .navbar ul li a {
+      text-decoration: none;
+      color: #323232;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+  
+    .navbar ul li a:hover {
+      color: #535252;
+    }
+  
+    .hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 80vh; /* reduced from 100vh */
+      padding: 30px;
+      gap: 20px; /* smaller gap */
+      background-color: transparent;
+    }
+  
+    .hero-text {
+      flex: 1;
+      padding: 10px;
+    }
+  
+    .hero-text h1 {
+      font-size: 36px; /* reduced */
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+  
+    .hero-text p {
+      font-size: 16px; /* reduced */
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+  
+    .highlight {
+      font-weight: bold;
+      color: #0077cc;
+    }
+  
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      width: 80%; /* slightly smaller */
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+  
+    .hero-image img:hover {
+      transform: scale(1.05);
+    }
+  
+    footer {
+      background-color: #DDD0C8;
+      color: #323232;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: auto; /* Ensure the footer sticks to the bottom */
+    }
+  .connect-link:hover {
+      color: #535252;   
+    
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 20px;
+        min-height: auto;
+      }
+  
+      .hero-text h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+  
+      .hero-text p {
+        text-align: center;
+      }
+  
+      .hero-image img {
+        max-width: 250px;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <!-- <li><a href="contact.html">Contact</a></li> -->
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="Pfp.jpg" alt="Geetika Photo">
+    </div>
+    <div class="hero-text">
+      <h1>Hello, I'm Geetika</h1>
+      <p>I’m a Project Engineer at CDAC with a passion for GenAI, Machine Learning, and NLP. My work blends creativity with cutting-edge technology to build intelligent solutions.</p>
+      <p class="highlight">
+        <a class="connect-link" href="https://www.linkedin.com/in/geetika-kanwar-61a33b223/" target="_blank" style="color: #323232; text-decoration: none; ">
+          Let's connect and explore how technology can transform industries.
+        </a>
+      </p>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Geetika. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

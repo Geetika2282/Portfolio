@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Geetika</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Top Navigation Bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #DDD0C8;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #323232;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #535252;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-content {
+      background-color: #DDD0C8;
+      flex: 1;
+    }
+
+    footer {
+      background-color: #DDD0C8;
+      color: #323232;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Projects Section Styling */
+    .projects {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-list li {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    .project-list a {
+      text-decoration: none;
+      color: #2c3e50;
+      display: inline-block;
+      padding: 15px 20px;
+      border-radius: 12px;
+      background-color: #f1e9e3;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .project-list a:hover {
+      background-color: #e2d7ce;
+      color: #323232;
+      transform: scale(1.03);
+    }
+
+    .project-list .desc {
+      display: block;
+      font-size: 14px;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <!-- <li><a href="contact.html">Contact</a></li> -->
+      </ul>
+    </div>
+
+    <main class="main-content">
+      <section class="projects">
+        <h2>My Featured Projects</h2>
+        <ul class="project-list">
+          <li>
+            <a href="https://promptwise.streamlit.app/" target="_blank">
+              🧠 <strong>AI-powered Chatbot</strong>
+              <br><span class="desc">Conversational assistant powered by GenAI + FastAPI</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://easystudy.streamlit.app/" target="_blank">
+              📚 <strong>Dynamic Study Planner</strong>
+              <br><span class="desc">Custom learning schedule creator with AI assistance</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://streamflixinsights.streamlit.app/" target="_blank">
+              🎬 <strong>Netflix Insights</strong>
+              <br><span class="desc">Visualizes genre trends and viewership insights</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://geetika2282.github.io/To-do-list-/" target="_blank">
+              📝 <strong>To-do List App</strong>
+              <br><span class="desc">Minimal, clean task manager using HTML, CSS & JS</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Geetika. All rights reserved.</p>
+  </footer>
+</body>
+</html>

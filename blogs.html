@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs | Geetika</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #DDD0C8;
+      color: #DDD0C8;
+      padding: 15px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #323232;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #535252;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+
+    /* Main Content */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #DDD0C8;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #DDD0C8;
+      padding: 40px 20px;
+    }
+
+    .coming-soon {
+      font-size: 48px;
+      color: #323232;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+      font-family: 'Georgia', serif;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(50, 50, 50, 0.3);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer */
+    footer {
+      background-color: #DDD0C8;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #323232;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <!-- <li><a href="contact.html">Contact</a></li> -->
+    </ul>
+  </div>
+
+  <!-- Main Section -->
+  <main class="main-content">
+    <div class="coming-soon">🚧 Coming Soon...</div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Geetika. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+<!-- ----------------------------------------------------------------------------------------- -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs | Geetika</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Top Navigation Bar */
+    .navbar {
+      position: sticky;
+      top: 0; /* Ensure it sticks to the top of the page */
+      background-color: #DDD0C8;
+      color: #DDD0C8;
+      padding: 15px;
+      text-align: center;
+      z-index: 10; /* Ensure it stays above other content */
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #323232;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #535252;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+
+    /* Center the categories on the screen */
+    .category-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      flex-wrap: wrap;
+    }
+
+    .category-button {
+      font-size: 24px;
+      padding: 20px 40px;
+      margin: 10px;
+      background-color: #323232;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .category-button:hover {
+      background-color: #4b4a4a;
+    }
+
+    footer {
+      position: sticky;
+      background-color: #DDD0C8;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    .main-content{
+      background-color: #DDD0C8;
+      flex: 1;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #DDD0C8;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="main-content">
+    <section class="category-container">
+      <button class="category-button" onclick="window.location.href='fiction.html'">Fiction</button>
+      <button class="category-button" onclick="window.location.href='non-fiction.html'">Non-Fiction</button>
+      <button class="category-button" onclick="window.location.href='tech.html'">Tech</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Geetika. All rights reserved.</p>
+  </footer>
+</body>
+</html> -->

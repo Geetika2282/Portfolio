@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast | Geetika</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #DDD0C8;
+      flex-direction: column;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #DDD0C8;
+      color: #323232;
+      padding: 15px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #323232;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #535252;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .podcast h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .episode {
+      margin-bottom: 30px;
+    }
+
+    .episode h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      height: 152px;
+    }
+
+    footer {
+      background-color: #DDD0C8;
+      color: #323232;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <!-- <li><a href="contact.html">Contact</a></li> -->
+      </ul>
+    </div>
+
+    <main class="main-content">
+      <section class="podcast">
+        <h2>🎧 Podcast</h2>
+
+        <div class="episode">
+          <h3>Trailer: Introducing me and my pOdCaSt</h3>
+          <iframe 
+            src="https://open.spotify.com/embed/episode/0USRWJJ66z39fUTjePlwn8"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="episode">
+          <h3>🎙️ Episode 1: Introducing me and my pOdCaSt</h3>
+          <iframe 
+            src="https://open.spotify.com/embed/episode/5IGbUmZexGECfM1S0zi3Ft"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="episode">
+          <h3>🎙️ Episode 2: Happie birthdayy</h3>
+          <iframe 
+            src="https://open.spotify.com/embed/episode/59XtTVq7fZXfRJV6L59Cs9"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="episode">
+          <h3>🎙️ Episode 3: Gossip with Yogita</h3>
+          <iframe 
+            src="https://open.spotify.com/embed/episode/4O4EmnCCfi2WLhjIb9Edu3"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="episode">
+          <h3>🎙️ Episode 4: Why we need mean people</h3>
+          <iframe 
+            src="https://open.spotify.com/embed/episode/4NtjaBKyz7iaHptbBu4gFh"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="episode">
+          <h3>🎙️ Episode 5: Happy 2024!</h3>
+          <iframe 
+            src="https://open.spotify.com/embed/episode/6kmjXB8Srb1RL6xpKkg4Cd"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="episode">
+          <h3>🎙️ Episode 7: Now that it's over</h3>
+          <iframe 
+            src="https://open.spotify.com/embed/episode/3Zc05gk7en0DkRt2ht7nHs"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Geetika. All rights reserved.</p>
+  </footer>
+</body>
+</html>
